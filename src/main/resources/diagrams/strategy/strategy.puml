@@ -1,0 +1,34 @@
+@startuml
+skinparam linetype ortho
+
+
+class Context {
+    - strategy: Strategy
+    + setStrategy(strategy: Strategy): void
+    + executeStrategy(): void
+}
+
+interface Strategy {
+    + execute(): void
+}
+
+class ConcreteStrategy1 {
+    + execute(): void
+}
+
+class ConcreteStrategy2 {
+    + execute(): void
+}
+
+class ConcreteStrategy3 {
+    + execute(): void
+}
+
+Context --> Strategy
+
+ConcreteStrategy1 -up-|> Strategy
+ConcreteStrategy2 -up-|> Strategy
+ConcreteStrategy3 -up-|> Strategy
+
+
+@enduml
