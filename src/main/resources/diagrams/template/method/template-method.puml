@@ -1,0 +1,33 @@
+@startuml
+skinparam linetype ortho
+
+abstract class AbstractClass {
+  + templateMethod(): void
+  # abstract step1(): void
+  # abstract step2(): void
+  # abstract step3(): void
+}
+
+class ConcreteClass1 {
+  # step1(): void
+  # step2(): void
+  # step3(): void
+}
+
+class ConcreteClass2 {
+  # step1(): void
+  # step2(): void
+  # step3(): void
+}
+
+class ConcreteClass3 {
+  # step1(): void
+  # step2(): void
+  # step3(): void
+}
+
+ConcreteClass1 -up-|> AbstractClass
+ConcreteClass2 -up-|> AbstractClass
+ConcreteClass3 -up-|> AbstractClass
+
+@enduml
