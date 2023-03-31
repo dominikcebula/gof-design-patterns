@@ -1,0 +1,34 @@
+@startuml
+
+abstract class Handler {
+  -next: Handler
+  +setNext(handler: Handler): void
+  +handleRequest(request: Request): void
+}
+
+class ConcreteHandler1 {
+  +handleRequest(request: Request): void
+}
+
+class ConcreteHandler2 {
+  +handleRequest(request: Request): void
+}
+
+class ConcreteHandler3 {
+  +handleRequest(request: Request): void
+}
+
+class Client {
+}
+
+Handler o--> Handler
+
+ConcreteHandler1 -up-|> Handler
+ConcreteHandler2 -up-|> Handler
+ConcreteHandler3 -up-|> Handler
+
+Client --> Handler
+
+note right of Client : var h1 = new ConcreteHandler1();\nvar h2 = new ConcreteHandler2();\nvar h3 = new ConcreteHandler3();\n\nh1.setNext(h2);\nh2.setNext(h3);\n\nh1.handleRequest(request);
+
+@enduml
