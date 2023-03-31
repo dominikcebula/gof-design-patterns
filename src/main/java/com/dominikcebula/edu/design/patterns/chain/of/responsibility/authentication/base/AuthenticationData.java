@@ -6,7 +6,7 @@ public interface AuthenticationData {
     }
 
     @SuppressWarnings("unchecked")
-    default <T extends AuthenticationData> T toType(Class<? extends AuthenticationData> aClass) {
+    default <T extends AuthenticationData> T toType() {
         return (T) this;
     }
 }

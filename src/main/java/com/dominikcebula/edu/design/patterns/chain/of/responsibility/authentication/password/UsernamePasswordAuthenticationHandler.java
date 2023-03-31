@@ -9,7 +9,7 @@ public class UsernamePasswordAuthenticationHandler extends BaseAuthenticationHan
         System.out.println("Executing username and password based authentication....");
 
         if (authenticationData.doesSupport(UsernamePasswordAuthenticationData.class)) {
-            UsernamePasswordAuthenticationData usernamePasswordAuthenticationData = authenticationData.toType(UsernamePasswordAuthenticationData.class);
+            UsernamePasswordAuthenticationData usernamePasswordAuthenticationData = authenticationData.toType();
 
             return usernamePasswordAuthenticationData.getUsername().equals("admin")
                     && usernamePasswordAuthenticationData.getPassword().equals("123");

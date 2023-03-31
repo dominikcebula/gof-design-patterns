@@ -9,7 +9,7 @@ public class CertificateAuthenticationHandler extends BaseAuthenticationHandler 
         System.out.println("Executing Certificate based authentication....");
 
         if (authenticationData.doesSupport(CertificateAuthenticationData.class)) {
-            CertificateAuthenticationData certificateAuthenticationData = authenticationData.toType(CertificateAuthenticationData.class);
+            CertificateAuthenticationData certificateAuthenticationData = authenticationData.toType();
 
             return certificateAuthenticationData.getCertificate().equals("certificate150");
         }

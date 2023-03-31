@@ -9,7 +9,7 @@ public class TokenAuthenticationHandler extends BaseAuthenticationHandler {
         System.out.println("Executing Token based authentication....");
 
         if (authenticationData.doesSupport(TokenAuthenticationData.class)) {
-            TokenAuthenticationData tokenAuthenticationData = authenticationData.toType(TokenAuthenticationData.class);
+            TokenAuthenticationData tokenAuthenticationData = authenticationData.toType();
 
             return tokenAuthenticationData.getToken().equals("token200");
         }
