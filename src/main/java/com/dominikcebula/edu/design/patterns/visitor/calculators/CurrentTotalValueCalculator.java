@@ -16,7 +16,9 @@ public class CurrentTotalValueCalculator implements FinancialInstrumentVisitor {
 
     @Override
     public void visit(Stock stock) {
-        currentTotalValue = currentTotalValue.add(stock.getPrice().multiply(stock.getShares()));
+        Money stockCurrentTotalValue = stock.getPrice().multiply(stock.getShares());
+
+        currentTotalValue = currentTotalValue.add(stockCurrentTotalValue);
     }
 
     @Override
