@@ -24,8 +24,7 @@ public class CurrentTotalValueCalculator implements FinancialInstrumentVisitor {
     @Override
     public void visit(Bond bond) {
         Money bondCurrentFaceValue = bond.getFaceValue();
-        Money bondCurrentCouponValue = bondCurrentFaceValue.multiply(bond.getCouponRate())
-                .multiply(bond.getNumYearsHeld());
+        Money bondCurrentCouponValue = bondCurrentFaceValue.multiply(bond.getCouponRate()).multiply(bond.getNumYearsHeld());
         Money bondCurrentTotalValue = bondCurrentFaceValue.add(bondCurrentCouponValue);
 
         currentTotalValue = currentTotalValue.add(bondCurrentTotalValue);
