@@ -1,0 +1,50 @@
+@startuml
+
+skinparam linetype ortho
+
+interface Visitor {
+    + visit(ConcreteElementA element)
+    + visit(ConcreteElementB element)
+}
+
+class ConcreteVisitor1 {
+    + visit(ConcreteElementA element)
+    + visit(ConcreteElementB element)
+}
+
+class ConcreteVisitor2 {
+    + visit(ConcreteElementA element)
+    + visit(ConcreteElementB element)
+}
+
+interface Element {
+    + accept(Visitor visitor)
+}
+
+class ConcreteElementB {
+    + propertyB()
+    + accept(Visitor visitor)
+}
+
+class ConcreteElementA {
+    + propertyA()
+    + accept(Visitor visitor)
+}
+
+class ObjectStructure {
+    - elements: Element[]
+    + accept(Visitor visitor)
+    + add(Element element)
+    + remove(Element element)
+}
+
+ConcreteVisitor1 -up-|> Visitor
+ConcreteVisitor2 -up-|> Visitor
+
+ConcreteElementA -up-|> Element
+ConcreteElementB -up-|> Element
+
+ObjectStructure -right-> Element
+ObjectStructure --> Visitor
+
+@enduml
