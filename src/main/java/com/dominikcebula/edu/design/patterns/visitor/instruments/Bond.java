@@ -5,12 +5,14 @@ import com.dominikcebula.edu.design.patterns.visitor.instruments.base.FinancialI
 import org.javamoney.moneta.Money;
 
 public class Bond implements FinancialInstrument {
-    private Money faceValue;
-    private double couponRate;
+    private final Money faceValue;
+    private final double couponRate;
+    private final int numYearsHeld;
 
-    public Bond(Money faceValue, double couponRate) {
+    public Bond(Money faceValue, double couponRate, int numYearsHeld) {
         this.faceValue = faceValue;
         this.couponRate = couponRate;
+        this.numYearsHeld = numYearsHeld;
     }
 
     public Money getFaceValue() {
@@ -19,6 +21,10 @@ public class Bond implements FinancialInstrument {
 
     public double getCouponRate() {
         return couponRate;
+    }
+
+    public int getNumYearsHeld() {
+        return numYearsHeld;
     }
 
     @Override

@@ -5,8 +5,10 @@ import com.dominikcebula.edu.design.patterns.visitor.instruments.Bond;
 import com.dominikcebula.edu.design.patterns.visitor.instruments.Stock;
 import org.javamoney.moneta.Money;
 
+import static com.dominikcebula.edu.design.patterns.visitor.instruments.base.FinancialInstrument.DEFAULT_CURRENCY;
+
 public class CapitalGainCalculator implements FinancialInstrumentVisitor {
-    private Money totalCapitalGain;
+    private final Money totalCapitalGain = Money.of(0, DEFAULT_CURRENCY);
 
     public Money getTotalCapitalGain() {
         return totalCapitalGain;

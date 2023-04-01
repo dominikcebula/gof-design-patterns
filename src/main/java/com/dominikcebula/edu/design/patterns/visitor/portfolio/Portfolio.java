@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Portfolio {
-    private List<FinancialInstrument> instruments = new ArrayList<>();
+    private final List<FinancialInstrument> instruments = new ArrayList<>();
 
     public void addFinancialInstrument(FinancialInstrument instrument) {
         instruments.add(instrument);

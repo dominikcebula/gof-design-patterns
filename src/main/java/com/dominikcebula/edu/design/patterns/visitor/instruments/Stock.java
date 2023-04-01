@@ -5,8 +5,8 @@ import com.dominikcebula.edu.design.patterns.visitor.instruments.base.FinancialI
 import org.javamoney.moneta.Money;
 
 public class Stock implements FinancialInstrument {
-    private Money price;
-    private int shares;
+    private final Money price;
+    private final int shares;
 
     public Stock(Money price, int shares) {
         this.price = price;
