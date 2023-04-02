@@ -4,6 +4,8 @@ import com.dominikcebula.edu.design.patterns.observer.data.Humidity;
 import com.dominikcebula.edu.design.patterns.observer.data.Pressure;
 import com.dominikcebula.edu.design.patterns.observer.data.Temperature;
 import com.dominikcebula.edu.design.patterns.observer.data.WeatherData;
+import com.dominikcebula.edu.design.patterns.observer.observer.Display;
+import com.dominikcebula.edu.design.patterns.observer.observer.JsonExporter;
 import com.dominikcebula.edu.design.patterns.observer.subject.WeatherStation;
 
 import static com.dominikcebula.edu.design.patterns.observer.data.units.PressureUnit.hPa;
@@ -29,6 +31,11 @@ class Runner {
                 new Pressure(982.7f, hPa)
         );
 
+        weatherStation.registerObserver(new Display());
+        weatherStation.registerObserver(new JsonExporter());
+
         weatherStation.setWeatherData(weatherData1);
+        weatherStation.setWeatherData(weatherData2);
+        weatherStation.setWeatherData(weatherData3);
     }
 }

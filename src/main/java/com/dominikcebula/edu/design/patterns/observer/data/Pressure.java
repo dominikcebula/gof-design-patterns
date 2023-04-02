@@ -11,8 +11,16 @@ public class Pressure {
         this.pressureUnit = pressureUnit;
     }
 
+    public float getPressure() {
+        return pressure;
+    }
+
+    public PressureUnit getPressureUnit() {
+        return pressureUnit;
+    }
+
     @Override
     public String toString() {
-        return String.format("%f %s", pressure, pressureUnit);
+        return String.format("%.1f %s", pressure, pressureUnit);
     }
 }

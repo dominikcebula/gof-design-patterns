@@ -10,6 +10,10 @@ public class Humidity {
         this.humidity = humidity;
     }
 
+    public float getHumidity() {
+        return humidity;
+    }
+
     @Override
     public String toString() {
         return String.format("%d%c", (int) (humidity * 100), '%');
