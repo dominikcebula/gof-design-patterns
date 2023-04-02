@@ -1,0 +1,34 @@
+@startuml
+
+skinparam linetype ortho
+
+interface Subject {
+  +subscribe(observer: Observer): void
+  +unsubscribe(observer: Observer): void
+  +notifyObservers(): void
+}
+
+class ConcreteSubject {
+  -observers: Observer[]
+  -state
+  +subscribe(observer: Observer): void
+  +unsubscribe(observer: Observer): void
+  +notifyObservers(): void
+}
+
+interface Observer {
+  +update(event: EventData): void
+}
+
+class ConcreteObserver {
+  -...
+  +update(event: EventData): void
+}
+
+ConcreteSubject -up-|> Subject
+ConcreteObserver -up-|> Observer
+
+ConcreteSubject o-right-> Observer
+
+
+@enduml
