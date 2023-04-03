@@ -1,0 +1,41 @@
+@startuml
+
+interface Command {
+  +execute(): void
+}
+
+class ConcreteCommand1 {
+  -receiver: Receiver
+  +ConcreteCommand(receiver, params)
+  +execute(): void
+}
+
+class ConcreteCommand2 {
+  -receiver: Receiver
+  +ConcreteCommand(receiver, params)
+  +execute(): void
+}
+
+interface Receiver {
+  ...
+  +action(params): void
+}
+
+class Invoker {
+  -command: Command
+  +setCommand(command: Command): void
+  +executeCommand(): void
+}
+
+class Client {
+  +run(): void
+}
+
+ConcreteCommand1 -up-|> Command
+ConcreteCommand2 -up-|> Command
+
+Invoker -right-> Command
+Client -right-> Invoker
+Client -up-> Receiver
+
+@enduml
