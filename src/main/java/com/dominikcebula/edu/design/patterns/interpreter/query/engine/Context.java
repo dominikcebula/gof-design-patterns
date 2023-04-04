@@ -30,15 +30,15 @@ public class Context {
         this.fieldNameToReturn = fieldNameToReturn;
     }
 
-    public void setFilterFieldName(String filterFieldName) {
+    void setFilterFieldName(String filterFieldName) {
         this.filterFieldName = filterFieldName;
     }
 
-    public void setLessThanValue(int lessThanValue) {
+    void setLessThanValue(int lessThanValue) {
         this.lessThanValue = lessThanValue;
     }
 
-    public List<String> executeSelect() {
+    List<String> executeSelect() {
         List<String> returnValues = new LinkedList<>();
 
         for (int i = 0; i < collectionData.size(); i++) {
