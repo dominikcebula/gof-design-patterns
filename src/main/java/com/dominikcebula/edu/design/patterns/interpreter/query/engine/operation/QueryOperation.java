@@ -15,22 +15,22 @@ public class QueryOperation {
         for (int i = 0; i < collectionData.size(); i++) {
             JsonNode jsonNode = collectionData.get(i);
 
-            if (nodeMatchesQueryCondition(context, jsonNode))
-                returnValues.add(getNodeValue(context, jsonNode));
+            if (nodeValueMatchesQueryCondition(context, jsonNode))
+                returnValues.add(getSelectFieldValue(context, jsonNode));
         }
 
         return returnValues;
     }
 
-    private boolean nodeMatchesQueryCondition(Context context, JsonNode jsonNode) {
-        return getFilterFieldValue(context, jsonNode) < context.getLessThanValue();
+    private boolean nodeValueMatchesQueryCondition(Context context, JsonNode jsonNode) {
+        return getFilterByFieldValue(context, jsonNode) < context.getLessThanValue();
     }
 
-    private int getFilterFieldValue(Context context, JsonNode jsonNode) {
+    private int getFilterByFieldValue(Context context, JsonNode jsonNode) {
         return jsonNode.get(context.getFilterFieldName()).asInt();
     }
 
-    private String getNodeValue(Context context, JsonNode jsonNode) {
+    private String getSelectFieldValue(Context context, JsonNode jsonNode) {
         return jsonNode.get(context.getFieldNameToReturn()).asText();
     }
 }
