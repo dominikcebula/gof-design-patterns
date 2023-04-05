@@ -1,16 +1,16 @@
 package com.dominikcebula.edu.design.patterns.interpreter;
 
 import com.dominikcebula.edu.design.patterns.interpreter.data.DataStore;
-import com.dominikcebula.edu.design.patterns.interpreter.query.engine.Context;
+import com.dominikcebula.edu.design.patterns.interpreter.query.engine.context.Context;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.util.List;
 
-import static com.dominikcebula.edu.design.patterns.interpreter.query.engine.Field.field;
-import static com.dominikcebula.edu.design.patterns.interpreter.query.engine.FromCollection.fromCollection;
-import static com.dominikcebula.edu.design.patterns.interpreter.query.engine.LessThan.lessThan;
-import static com.dominikcebula.edu.design.patterns.interpreter.query.engine.Select.select;
-import static com.dominikcebula.edu.design.patterns.interpreter.query.engine.Where.where;
+import static com.dominikcebula.edu.design.patterns.interpreter.query.engine.expression.Field.field;
+import static com.dominikcebula.edu.design.patterns.interpreter.query.engine.expression.FromCollection.fromCollection;
+import static com.dominikcebula.edu.design.patterns.interpreter.query.engine.expression.LessThan.lessThan;
+import static com.dominikcebula.edu.design.patterns.interpreter.query.engine.expression.Select.select;
+import static com.dominikcebula.edu.design.patterns.interpreter.query.engine.expression.Where.where;
 
 public class Runner {
     public static void main(String[] args) throws JsonProcessingException {

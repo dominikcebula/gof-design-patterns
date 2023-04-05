@@ -1,4 +1,6 @@
-package com.dominikcebula.edu.design.patterns.interpreter.query.engine;
+package com.dominikcebula.edu.design.patterns.interpreter.query.engine.expression;
+
+import com.dominikcebula.edu.design.patterns.interpreter.query.engine.context.Context;
 
 import java.util.List;
 

@@ -1,8 +1,13 @@
-package com.dominikcebula.edu.design.patterns.interpreter.query.engine;
+package com.dominikcebula.edu.design.patterns.interpreter.query.engine.expression;
+
+import com.dominikcebula.edu.design.patterns.interpreter.query.engine.context.Context;
+import com.dominikcebula.edu.design.patterns.interpreter.query.engine.operation.QueryOperation;
 
 import java.util.List;
 
 public class LessThan implements Expression {
+    private final QueryOperation queryOperation = new QueryOperation();
+
     private final int lessThanValue;
 
     public static LessThan lessThan(int lessThanValue) {
@@ -17,6 +22,6 @@ public class LessThan implements Expression {
     public List<String> interpret(Context context) {
         context.setLessThanValue(lessThanValue);
 
-        return context.executeSelect();
+        return queryOperation.execute(context);
     }
 }

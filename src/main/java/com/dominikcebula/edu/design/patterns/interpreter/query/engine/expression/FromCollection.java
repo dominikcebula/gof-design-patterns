@@ -1,6 +1,7 @@
-package com.dominikcebula.edu.design.patterns.interpreter.query.engine;
+package com.dominikcebula.edu.design.patterns.interpreter.query.engine.expression;
 
 import com.dominikcebula.edu.design.patterns.interpreter.data.DataStore;
+import com.dominikcebula.edu.design.patterns.interpreter.query.engine.context.Context;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import java.util.List;
