@@ -10,6 +10,7 @@ public class SubmitButton extends AbstractComponent {
     public void setEnabled(boolean enabled) {
         if (this.enabled != enabled)
             System.out.println("Changing submit button state to enabled = " + enabled);
+
         this.enabled = enabled;
     }
 
