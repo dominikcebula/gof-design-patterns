@@ -35,8 +35,8 @@ public class Runner {
         // notice submit button changed to enabled state again once assigning back missing value
 
         submitButton.click();
-        // notice how submission processing does not require each fields to know about each other
-        // mediator knows about each field, but each field do not know about each other
+        // notice how data submission does not require each field to know about the other
+        // mediator knows about each field, but each field does not know about the other
 
         System.out.println("Submissions list size = " + submissionsList.size());
         submissionsList.getSubmissions().forEach(System.out::println);
