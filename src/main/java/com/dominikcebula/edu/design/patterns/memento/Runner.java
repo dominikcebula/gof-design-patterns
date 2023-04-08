@@ -13,8 +13,8 @@ public class Runner {
         System.out.println(editor.getText()); // Hello World! Hello Again!
         history.add(editor.getCurrentState());
 
-        editor.delete(6); // Hello World! Hello
-        System.out.println(editor.getText());
+        editor.delete(6);
+        System.out.println(editor.getText()); // Hello World! Hello
         history.add(editor.getCurrentState());
 
         editor.insert("John!");
