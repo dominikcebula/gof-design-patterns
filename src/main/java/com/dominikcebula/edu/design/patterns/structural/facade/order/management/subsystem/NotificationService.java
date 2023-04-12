@@ -3,7 +3,6 @@ package com.dominikcebula.edu.design.patterns.structural.facade.order.management
 import com.dominikcebula.edu.design.patterns.structural.facade.order.management.dto.Item;
 
 public class NotificationService {
-
     public void onItemNotAvailable(Item item, int quantity) {
         System.out.println("Notification: item = " + item + " with quantity = " + quantity + " not available");
     }
