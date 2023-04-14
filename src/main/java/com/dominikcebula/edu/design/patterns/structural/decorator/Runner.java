@@ -10,9 +10,15 @@ public class Runner {
     public static void main(String[] args) {
         Image image = new FileImage("image.jpg");
 
-        Image filteredImage1 = new SaturationFilter(new ContrastFilter(new BrightnessFilter(image)));
+        Image filteredImage1 = new SaturationFilter(
+                new ContrastFilter(
+                        new BrightnessFilter(image)
+                )
+        );
 
-        Image filteredImage2 = new ContrastFilter(new BrightnessFilter(image));
+        Image filteredImage2 = new ContrastFilter(
+                new BrightnessFilter(image)
+        );
 
         filteredImage1.display();
         filteredImage2.display();
