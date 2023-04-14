@@ -7,6 +7,7 @@ public class SaturationFilter extends ImageFilter {
         super(image);
     }
 
+    @Override
     public void display() {
         System.out.println("Applying saturation filter");
         super.display();

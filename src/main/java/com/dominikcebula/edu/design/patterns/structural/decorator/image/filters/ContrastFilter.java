@@ -7,6 +7,7 @@ public class ContrastFilter extends ImageFilter {
         super(image);
     }
 
+    @Override
     public void display() {
         System.out.println("Applying contrast filter");
         super.display();
