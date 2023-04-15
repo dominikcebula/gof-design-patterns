@@ -4,7 +4,7 @@ import com.dominikcebula.edu.design.patterns.structural.adapter.income.reporter.
 
 public class LegacyAccountingSystemImpl implements LegacyAccountingSystem {
     @Override
-    public void reportIncome(LegacyIncomeData legacyIncomeData) {
+    public void reportLegacyIncome(LegacyIncomeData legacyIncomeData) {
         // Income data reporting details in a legacy system
         System.out.println("Reporting income data in a legacy system");
     }

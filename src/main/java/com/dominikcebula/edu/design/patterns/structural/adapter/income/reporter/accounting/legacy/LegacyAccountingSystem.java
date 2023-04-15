@@ -3,5 +3,5 @@ package com.dominikcebula.edu.design.patterns.structural.adapter.income.reporter
 import com.dominikcebula.edu.design.patterns.structural.adapter.income.reporter.accounting.legacy.dto.LegacyIncomeData;
 
 public interface LegacyAccountingSystem {
-    void reportIncome(LegacyIncomeData legacyIncomeData);
+    void reportLegacyIncome(LegacyIncomeData legacyIncomeData);
 }

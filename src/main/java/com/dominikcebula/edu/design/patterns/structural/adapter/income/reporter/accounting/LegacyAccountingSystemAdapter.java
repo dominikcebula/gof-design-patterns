@@ -15,7 +15,7 @@ public class LegacyAccountingSystemAdapter implements AccountingSystem {
     public void reportIncome(IncomeData incomeData) {
         // Adapter that can map regular AccountingSystem request to LegacyAccountingSystem request
         System.out.println("Reporting income data in a legacy system using adapter");
-        legacyAccountingSystem.reportIncome(mapToLegacyIncomeData(incomeData));
+        legacyAccountingSystem.reportLegacyIncome(mapToLegacyIncomeData(incomeData));
     }
 
     private LegacyIncomeData mapToLegacyIncomeData(IncomeData incomeData) {
