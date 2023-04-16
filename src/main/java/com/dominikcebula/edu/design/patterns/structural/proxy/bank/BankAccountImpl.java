@@ -12,8 +12,7 @@ public class BankAccountImpl implements BankAccount {
 
     @Override
     public void withdraw(Money amount) {
-        if (balance.isGreaterThanOrEqualTo(amount))
-            balance = balance.subtract(amount);
+        if (balance.isGreaterThanOrEqualTo(amount)) balance = balance.subtract(amount);
         else
             throw new IllegalStateException("Unable to withdraw amount " + amount + " because amount exceeds current balance " + balance);
     }
