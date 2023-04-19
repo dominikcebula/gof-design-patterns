@@ -1,9 +1,9 @@
-package com.dominikcebula.edu.design.patterns.structural.factory.method;
+package com.dominikcebula.edu.design.patterns.creational.factory.method;
 
-import com.dominikcebula.edu.design.patterns.structural.factory.method.shop.cart.Cart;
-import com.dominikcebula.edu.design.patterns.structural.factory.method.shop.cart.DomesticCart;
-import com.dominikcebula.edu.design.patterns.structural.factory.method.shop.cart.InternationalCart;
-import com.dominikcebula.edu.design.patterns.structural.factory.method.shop.product.Product;
+import com.dominikcebula.edu.design.patterns.creational.factory.method.shop.cart.Cart;
+import com.dominikcebula.edu.design.patterns.creational.factory.method.shop.cart.DomesticCart;
+import com.dominikcebula.edu.design.patterns.creational.factory.method.shop.cart.InternationalCart;
+import com.dominikcebula.edu.design.patterns.creational.factory.method.shop.product.Product;
 import org.javamoney.moneta.Money;
 
 public class Runner {

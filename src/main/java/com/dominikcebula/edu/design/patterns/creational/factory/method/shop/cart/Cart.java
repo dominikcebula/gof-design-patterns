@@ -1,7 +1,7 @@
-package com.dominikcebula.edu.design.patterns.structural.factory.method.shop.cart;
+package com.dominikcebula.edu.design.patterns.creational.factory.method.shop.cart;
 
-import com.dominikcebula.edu.design.patterns.structural.factory.method.shop.product.Product;
-import com.dominikcebula.edu.design.patterns.structural.factory.method.shop.shipping.Shipping;
+import com.dominikcebula.edu.design.patterns.creational.factory.method.shop.product.Product;
+import com.dominikcebula.edu.design.patterns.creational.factory.method.shop.shipping.Shipping;
 import org.javamoney.moneta.Money;
 
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package com.dominikcebula.edu.design.patterns.structural.factory.method.shop.shipping;
+package com.dominikcebula.edu.design.patterns.creational.factory.method.shop.shipping;
 
 import org.javamoney.moneta.Money;
 
