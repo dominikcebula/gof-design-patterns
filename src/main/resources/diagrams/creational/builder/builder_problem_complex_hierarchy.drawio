@@ -1,0 +1,85 @@
+<mxfile host="Electron" modified="2023-04-23T18:17:09.081Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="eDzi7w1_ElNsU4TSpur1" version="21.2.1" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="989" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-0" value="TravelItinerary" style="html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="304" y="80" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-1" value="TravelItineraryWithFlights" style="html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="50" y="200" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-2" value="TravelItineraryWithHotels" style="html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="50" y="280" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-3" value="TravelItineraryWithFlightsAndHotels" style="html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="50" y="360" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-4" value="TravelItineraryWithFlightsHotelsAndCar" style="html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="200" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-5" value="TravelItineraryWithFlightsAndActivities" style="html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="280" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-6" value="TravelItineraryWithFlightsHotelsMealsAndCar" style="html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="360" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-7" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="TUnmwRrEwCP_NuKm3s-q-1" target="TUnmwRrEwCP_NuKm3s-q-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="150" y="160" as="sourcePoint" />
+            <mxPoint x="310" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-8" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="TUnmwRrEwCP_NuKm3s-q-4" target="TUnmwRrEwCP_NuKm3s-q-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="230" as="sourcePoint" />
+            <mxPoint x="385" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-9" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="TUnmwRrEwCP_NuKm3s-q-2" target="TUnmwRrEwCP_NuKm3s-q-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="240" as="sourcePoint" />
+            <mxPoint x="370" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-10" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="TUnmwRrEwCP_NuKm3s-q-5" target="TUnmwRrEwCP_NuKm3s-q-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="315" as="sourcePoint" />
+            <mxPoint x="370" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-11" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="TUnmwRrEwCP_NuKm3s-q-3" target="TUnmwRrEwCP_NuKm3s-q-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="315" as="sourcePoint" />
+            <mxPoint x="370" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TUnmwRrEwCP_NuKm3s-q-12" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="TUnmwRrEwCP_NuKm3s-q-6" target="TUnmwRrEwCP_NuKm3s-q-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="395" as="sourcePoint" />
+            <mxPoint x="370" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
