@@ -7,38 +7,30 @@ import com.dominikcebula.edu.design.patterns.creational.builder.travel.itinerary
 
 public class Runner {
     public static void main(String[] args) {
-        TravelAgency travelAgency = new TravelAgency();
+        TravelAgency travelAgency = new TravelAgency(new DeluxeTravelItineraryBuilder());
 
         System.out.println("Deluxe Travel options...");
-        var deluxeTravelItineraryBuilder = new DeluxeTravelItineraryBuilder();
-        travelAgency.setTravelItineraryBuilder(deluxeTravelItineraryBuilder);
 
-        travelAgency.createFullPackageItinerary("JFK", "LAX");
-        TravelItinerary fullPackageDeluxeTravelItinerary = deluxeTravelItineraryBuilder.build();
+        TravelItinerary fullPackageDeluxeTravelItinerary = travelAgency.createFullPackageItinerary("JFK", "LAX");
         System.out.println("Full Package Deluxe Travel Itinerary: " + fullPackageDeluxeTravelItinerary);
 
-        travelAgency.createFlightsOnlyItinerary("JFK", "LAX");
-        TravelItinerary flightsOnlyDeluxeTravelItinerary = deluxeTravelItineraryBuilder.build();
+        TravelItinerary flightsOnlyDeluxeTravelItinerary = travelAgency.createFlightsOnlyItinerary("JFK", "LAX");
         System.out.println("Flights Only Deluxe Travel Itinerary: " + flightsOnlyDeluxeTravelItinerary);
 
-        travelAgency.createFlightsAndHotelItinerary("JFK", "LAX");
-        TravelItinerary flightsAndHotelDeluxeItinerary = deluxeTravelItineraryBuilder.build();
+        TravelItinerary flightsAndHotelDeluxeItinerary = travelAgency.createFlightsAndHotelItinerary("JFK", "LAX");
         System.out.println("Flights and Hotel Deluxe Travel Itinerary: " + flightsAndHotelDeluxeItinerary);
 
-        System.out.println("Budget Travel options...");
-        var budgetTravelItineraryBuilder = new BudgetTravelItineraryBuilder();
-        travelAgency.setTravelItineraryBuilder(budgetTravelItineraryBuilder);
 
-        travelAgency.createFullPackageItinerary("JFK", "LAX");
-        TravelItinerary fullPackageBudgetTravelItinerary = budgetTravelItineraryBuilder.build();
+        travelAgency = new TravelAgency(new BudgetTravelItineraryBuilder());
+        System.out.println("Budget Travel options...");
+
+        TravelItinerary fullPackageBudgetTravelItinerary = travelAgency.createFullPackageItinerary("JFK", "LAX");
         System.out.println("Full Package Budget Travel Itinerary: " + fullPackageBudgetTravelItinerary);
 
-        travelAgency.createFlightsOnlyItinerary("JFK", "LAX");
-        TravelItinerary flightsOnlyBudgetTravelItinerary = budgetTravelItineraryBuilder.build();
+        TravelItinerary flightsOnlyBudgetTravelItinerary = travelAgency.createFlightsOnlyItinerary("JFK", "LAX");
         System.out.println("Flights Only Budget Travel Itinerary: " + flightsOnlyBudgetTravelItinerary);
 
-        travelAgency.createFlightsAndHotelItinerary("JFK", "LAX");
-        TravelItinerary flightsAndHotelBudgetItinerary = budgetTravelItineraryBuilder.build();
+        TravelItinerary flightsAndHotelBudgetItinerary = travelAgency.createFlightsAndHotelItinerary("JFK", "LAX");
         System.out.println("Flights and Hotel Budget Travel Itinerary: " + flightsAndHotelBudgetItinerary);
     }
 }
