@@ -20,13 +20,13 @@ public class DeluxeTravelItineraryBuilder implements TravelItineraryBuilder {
 
     @Override
     public TravelItineraryBuilder withFlight(String departure, String arrival) {
-        travelItinerary.setFlight(Flight.of(FIRST, departure, arrival));
+        travelItinerary.setFlight(new Flight(FIRST, departure, arrival));
         return this;
     }
 
     @Override
     public TravelItineraryBuilder withHotel(String hotelCity) {
-        travelItinerary.setHotel(Hotel.of(LUXURY, hotelCity));
+        travelItinerary.setHotel(new Hotel(LUXURY, hotelCity));
         return this;
     }
 

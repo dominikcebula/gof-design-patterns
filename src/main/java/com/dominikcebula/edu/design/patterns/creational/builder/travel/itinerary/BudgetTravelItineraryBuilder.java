@@ -20,13 +20,13 @@ public class BudgetTravelItineraryBuilder implements TravelItineraryBuilder {
 
     @Override
     public TravelItineraryBuilder withFlight(String departure, String arrival) {
-        travelItinerary.setFlight(Flight.of(ECONOMY, departure, arrival));
+        travelItinerary.setFlight(new Flight(ECONOMY, departure, arrival));
         return this;
     }
 
     @Override
     public TravelItineraryBuilder withHotel(String hotelCity) {
-        travelItinerary.setHotel(Hotel.of(TOURIST, hotelCity));
+        travelItinerary.setHotel(new Hotel(TOURIST, hotelCity));
         return this;
     }
 
