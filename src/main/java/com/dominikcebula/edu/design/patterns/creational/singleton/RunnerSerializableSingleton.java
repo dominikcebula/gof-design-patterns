@@ -4,26 +4,27 @@ import java.io.*;
 
 public class RunnerSerializableSingleton {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        SerializableSingleton instanceOne = SerializableSingleton.getInstance();
-        byte[] instanceOneSerialized = serializeObject(instanceOne);
+        final String fileName = "test.dat";
 
-        SerializableSingleton instanceTwo = deserializeObject(instanceOneSerialized);
+        SerializableSingleton instanceOne = SerializableSingleton.getInstance();
+        serializeObject(instanceOne, fileName);
+
+        SerializableSingleton instanceTwo = deserializeObject(fileName);
 
         System.out.println("instanceOne hashCode = " + instanceOne.hashCode());
         System.out.println("instanceTwo hashCode = " + instanceTwo.hashCode());
     }
 
-    private static byte[] serializeObject(SerializableSingleton instanceOne) throws IOException {
-        try (ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-             ObjectOutput objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);) {
+    private static void serializeObject(SerializableSingleton instanceOne, String fileName) throws IOException {
+        try (FileOutputStream fileOutputStream = new FileOutputStream(fileName);
+             ObjectOutput objectOutputStream = new ObjectOutputStream(fileOutputStream);) {
             objectOutputStream.writeObject(instanceOne);
-            return byteArrayOutputStream.toByteArray();
         }
     }
 
-    private static SerializableSingleton deserializeObject(byte[] serializedObject) throws IOException, ClassNotFoundException {
-        try (ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(serializedObject);
-             ObjectInput objectInputStream = new ObjectInputStream(byteArrayInputStream)) {
+    private static SerializableSingleton deserializeObject(String fileName) throws IOException, ClassNotFoundException {
+        try (FileInputStream fileInputStream = new FileInputStream(fileName);
+             ObjectInput objectInputStream = new ObjectInputStream(fileInputStream)) {
             return (SerializableSingleton) objectInputStream.readObject();
         }
     }
