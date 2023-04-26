@@ -6,6 +6,7 @@ import java.io.Serializable;
 public class SerializableSingleton implements Serializable {
     private static final SerializableSingleton INSTANCE = new SerializableSingleton();
 
+    // private constructor to prevent instance creation
     private SerializableSingleton() {
     }
 
