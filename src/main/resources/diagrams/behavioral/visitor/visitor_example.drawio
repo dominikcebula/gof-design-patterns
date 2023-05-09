@@ -1,0 +1,190 @@
+<mxfile host="Electron" modified="2023-05-09T18:33:15.157Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="OTmm9hj7-rdH8R3Mw-MC" version="21.2.8" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1793" dy="2224" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-35" value="Financial Portfolio" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;arcSize=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="470" y="40" width="630" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-30" value="Financial Instruments" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;arcSize=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="660" y="440" width="620" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-29" value="Financial Calculators" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;arcSize=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="370" width="580" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;FinancialInstrument&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ accept(FinancialInstrumentVisitor visitor): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="830" y="480" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-1" value="Stock" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="670" y="680" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-2" value="- price: Money&lt;br&gt;- shares: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-1">
+          <mxGeometry y="26" width="280" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-1">
+          <mxGeometry y="70" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-4" value="+ getPrice(): Money&lt;br&gt;+ getShares(): int&lt;br&gt;+ accept(FinancialInstrumentVisitor visitor): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-1">
+          <mxGeometry y="78" width="280" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-5" value="Bond" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="990" y="680" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-6" value="-&amp;nbsp;faceValue:&amp;nbsp;Money&lt;br&gt;-&amp;nbsp;couponRate:&amp;nbsp;double&lt;br&gt;-&amp;nbsp;numYearsHeld:&amp;nbsp;int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-5">
+          <mxGeometry y="26" width="280" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-5">
+          <mxGeometry y="90" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-8" value="+ getFaceValue():&amp;nbsp;Money&lt;br&gt;+&amp;nbsp;getCouponRate():&amp;nbsp;double&lt;br&gt;+&amp;nbsp;getNumYearsHeld(): int&lt;br&gt;+ accept(FinancialInstrumentVisitor visitor): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-5">
+          <mxGeometry y="98" width="280" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-9" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OLL_9KTFFAhumPvM7Fnc-1" target="OLL_9KTFFAhumPvM7Fnc-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="680" y="650" as="sourcePoint" />
+            <mxPoint x="840" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="770" y="640" />
+              <mxPoint x="970" y="640" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-10" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OLL_9KTFFAhumPvM7Fnc-5" target="OLL_9KTFFAhumPvM7Fnc-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="780" y="690" as="sourcePoint" />
+            <mxPoint x="980" y="590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1170" y="640" />
+              <mxPoint x="970" y="640" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;FinancialInstrumentVisitor&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ visit(Stock stock): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ visit(Bond bond): void&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="210" y="420" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-12" value="CurrentTotalValueCalculator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="50" y="600" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-13" value="- currentTotalValue: Money" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-12">
+          <mxGeometry y="26" width="240" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-12">
+          <mxGeometry y="70" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-15" value="&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ visit(Stock stock): void&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ visit(Bond bond): void&lt;/p&gt;&amp;nbsp;+ getCurrentTotalValue(): Money" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-12">
+          <mxGeometry y="78" width="240" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-16" value="YieldCalculator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="370" y="600" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-17" value="- totalYield: double&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-16">
+          <mxGeometry y="26" width="240" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-16">
+          <mxGeometry y="70" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-19" value="&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ visit(Stock stock): void&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ visit(Bond bond): void&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+&amp;nbsp;getTotalYield(): double&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-16">
+          <mxGeometry y="78" width="240" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-20" value="CapitalGainCalculator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="210" y="780" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-21" value="- totalCapitalGain: Money&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-20">
+          <mxGeometry y="26" width="240" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-20">
+          <mxGeometry y="70" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-23" value="&lt;div&gt;+ visit(Stock stock): void&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ visit(Bond bond): void&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ getTotalCapitalGain(): Money&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-20">
+          <mxGeometry y="78" width="240" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-26" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OLL_9KTFFAhumPvM7Fnc-12" target="OLL_9KTFFAhumPvM7Fnc-11">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="360" y="1000" as="sourcePoint" />
+            <mxPoint x="560" y="900" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="170" y="560" />
+              <mxPoint x="330" y="560" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-27" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OLL_9KTFFAhumPvM7Fnc-16" target="OLL_9KTFFAhumPvM7Fnc-11">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="180" y="590" as="sourcePoint" />
+            <mxPoint x="340" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="490" y="560" />
+              <mxPoint x="330" y="560" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-28" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OLL_9KTFFAhumPvM7Fnc-20" target="OLL_9KTFFAhumPvM7Fnc-11">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="500" y="590" as="sourcePoint" />
+            <mxPoint x="340" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="560" />
+              <mxPoint x="330" y="560" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-31" value="Portfolio" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="710" y="100" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-32" value="- instruments:&amp;nbsp;FinancialInstrument[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-31">
+          <mxGeometry y="26" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-31">
+          <mxGeometry y="52" width="380" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-34" value="+ addFinancialInstrument(FinancialInstrument instrument): void&lt;br&gt;+ removeFinancialInstrument(FinancialInstrument instrument): void&lt;br&gt;+ accept(FinancialInstrumentVisitor visitor)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OLL_9KTFFAhumPvM7Fnc-31">
+          <mxGeometry y="60" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-36" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OLL_9KTFFAhumPvM7Fnc-35" target="OLL_9KTFFAhumPvM7Fnc-30">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="520" y="290" as="sourcePoint" />
+            <mxPoint x="680" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="880" y="310" />
+              <mxPoint x="970" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-37" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OLL_9KTFFAhumPvM7Fnc-35" target="OLL_9KTFFAhumPvM7Fnc-29">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="360" y="270" as="sourcePoint" />
+            <mxPoint x="520" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="310" />
+              <mxPoint x="330" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-38" value="Client" style="html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="480" y="132.5" width="130" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-40" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OLL_9KTFFAhumPvM7Fnc-38" target="OLL_9KTFFAhumPvM7Fnc-31">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="440" y="250" as="sourcePoint" />
+            <mxPoint x="600" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-41" value="&lt;div&gt;...&lt;/div&gt;&lt;div&gt;portfolio.addFinancialInstrument(stock);&lt;/div&gt;&lt;div&gt;portfolio.addFinancialInstrument(stock);&lt;/div&gt;&lt;div&gt;portfolio.addFinancialInstrument(stock);&lt;/div&gt;&lt;div&gt;portfolio.addFinancialInstrument(bond);&lt;/div&gt;&lt;div&gt;portfolio.addFinancialInstrument(bond);&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;&lt;div&gt;portfolio.accept(currentTotalValueCalculator);&lt;/div&gt;&lt;div&gt;currentTotalValue = currentTotalValueCalculator.getCurrentTotalValue();&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;&lt;div&gt;portfolio.accept(yieldCalculator);&lt;/div&gt;&lt;div&gt;totalYield = yieldCalculator.getTotalYield();&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;&lt;div&gt;portfolio.accept(capitalGainCalculator);&lt;/div&gt;&lt;div&gt;totalCapitalGain = capitalGainCalculator.getTotalCapitalGain();&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=9;align=left;verticalAlign=middle;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="-40" width="385" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="OLL_9KTFFAhumPvM7Fnc-42" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OLL_9KTFFAhumPvM7Fnc-41" target="OLL_9KTFFAhumPvM7Fnc-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="150" as="sourcePoint" />
+            <mxPoint x="480" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
