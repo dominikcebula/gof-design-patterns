@@ -5,10 +5,9 @@ interface Command {
 }
 
 class ConcreteCommand1 {
--receiver: Receiver
--params: Params
-+ ConcreteCommand(receiver, params)
-+ execute(): void
+  -receiver: Receiver
+  +ConcreteCommand(receiver, params)
+  +execute(): void
 }
 
 class ConcreteCommand2 {
@@ -19,13 +18,13 @@ class ConcreteCommand2 {
 
 interface Receiver {
   ...
-+ action(params: Params): void
+  +action(params): void
 }
 
 class Invoker {
-- command: Command
-+ setCommand(command: Command): void
-+ executeCommand(): void
+  -command: Command
+  +setCommand(command: Command): void
+  +executeCommand(): void
 }
 
 class Client {
