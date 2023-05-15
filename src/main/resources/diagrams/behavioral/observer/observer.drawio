@@ -1,0 +1,76 @@
+<mxfile host="Electron" modified="2023-05-15T19:49:00.617Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="GB9Z1ReSxGAcAnxTRle2" version="21.2.8" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2261" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="pCePPEbcNl0ekPrGwgli-0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Subject&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- observers: Observer[]&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- state&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ stateChangingOperation(): void&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ subscribe(observer: Observer): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ unsubscribe(observer: Observer): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;# notifyObservers(): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="330" y="140" width="240" height="157.5" as="geometry" />
+        </mxCell>
+        <mxCell id="pCePPEbcNl0ekPrGwgli-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ConcreteObserver&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;...&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ update(event: EventData): void&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="650" y="410" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-6uqTUx1C1dOMGygy9pW-0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Observer&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ update(event: EventData): void&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="650" y="181.25" width="190" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="-6uqTUx1C1dOMGygy9pW-1" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-6uqTUx1C1dOMGygy9pW-0" target="pCePPEbcNl0ekPrGwgli-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="500" y="236.25" as="sourcePoint" />
+            <mxPoint x="660" y="236.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-6uqTUx1C1dOMGygy9pW-2" value="Client" style="html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="193.75" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-6uqTUx1C1dOMGygy9pW-3" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-6uqTUx1C1dOMGygy9pW-2" target="pCePPEbcNl0ekPrGwgli-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="210" y="236.25" as="sourcePoint" />
+            <mxPoint x="370" y="236.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-6uqTUx1C1dOMGygy9pW-4" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-6uqTUx1C1dOMGygy9pW-2" target="pCePPEbcNl0ekPrGwgli-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="366.25" as="sourcePoint" />
+            <mxPoint x="370" y="366.25" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="135" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-6uqTUx1C1dOMGygy9pW-6" value="&amp;nbsp; subject = new Subject();&lt;br&gt;&lt;br&gt;&amp;nbsp; observer = new ConcreteObserver();&lt;br&gt;&amp;nbsp; subject.subscribe(observer);&lt;br&gt;&lt;br&gt;&amp;nbsp; subject.stateChangingOperation();" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=12;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-20" y="40" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-6uqTUx1C1dOMGygy9pW-8" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="pCePPEbcNl0ekPrGwgli-1" target="-6uqTUx1C1dOMGygy9pW-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="350" y="326.25" as="sourcePoint" />
+            <mxPoint x="510" y="326.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-6uqTUx1C1dOMGygy9pW-9" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-6uqTUx1C1dOMGygy9pW-6" target="-6uqTUx1C1dOMGygy9pW-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="246.25" as="sourcePoint" />
+            <mxPoint x="440" y="196.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-6uqTUx1C1dOMGygy9pW-10" value="&lt;div&gt;&amp;nbsp; void notifyObservers() {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;for (observer : observers)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;		&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;observer.update(...);&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=12;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="420" y="350" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-6uqTUx1C1dOMGygy9pW-11" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="-6uqTUx1C1dOMGygy9pW-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="471" y="278" as="sourcePoint" />
+            <mxPoint x="196" y="204" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-6uqTUx1C1dOMGygy9pW-12" value="&lt;div&gt;&amp;nbsp; void stateChangingOperation() {&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;// ...&lt;/div&gt;&lt;div&gt;state = newState;&lt;/div&gt;&lt;div&gt;// ...&lt;/div&gt;&lt;div&gt;notifyObservers();&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=12;align=left;verticalAlign=middle;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="320" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-6uqTUx1C1dOMGygy9pW-13" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="-6uqTUx1C1dOMGygy9pW-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="335" y="221" as="sourcePoint" />
+            <mxPoint x="521" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
