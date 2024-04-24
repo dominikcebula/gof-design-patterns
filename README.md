@@ -29,7 +29,7 @@ Amazon: https://www.amazon.com/Design-Patterns-Distilled-Dominik-Cebula-ebook/dp
 
 * Abstract Factory
 * Builder
-* Method
+* Factory Method
 * Prototype
 * Singleton
 
@@ -55,7 +55,7 @@ Amazon: https://www.amazon.com/Design-Patterns-Distilled-Dominik-Cebula-ebook/dp
 * State
 * Strategy
 * Template Method
-* visitor
+* Visitor
 
 # Author
 
