@@ -27,11 +27,11 @@ Amazon: https://www.amazon.com/Design-Patterns-Distilled-Dominik-Cebula-ebook/dp
 
 ## Creational
 
-* Abstract Factory
-* Builder
-* Factory Method
-* Prototype
-* Singleton
+* [Abstract Factory](src/main/java/com/dominikcebula/edu/design/patterns/creational/abstractfactory)
+* [Builder](src/main/java/com/dominikcebula/edu/design/patterns/creational/builder)
+* [Factory Method](src/main/java/com/dominikcebula/edu/design/patterns/creational/factory/method)
+* [Prototype](src/main/java/com/dominikcebula/edu/design/patterns/creational/prototype)
+* [Singleton](src/main/java/com/dominikcebula/edu/design/patterns/creational/singleton)
 
 ## Structural
 
