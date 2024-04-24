@@ -1,4 +1,4 @@
-# Summary
+# Introduction
 
 This repository contains GoF Design Patterns Examples used in my book "GoF Design Patterns Distilled".
 
