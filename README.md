@@ -22,3 +22,47 @@ The book is available on Leanpub and Amazon:
 Leanpub: https://leanpub.com/gof-design-patterns
 
 Amazon: https://www.amazon.com/Design-Patterns-Distilled-Dominik-Cebula-ebook/dp/B0C91X1GT8
+
+# Design Patterns
+
+## Creational
+
+* Abstract Factory
+* Builder
+* Method
+* Prototype
+* Singleton
+
+## Structural
+
+* Adapter
+* Bridge
+* Composite
+* Decorator
+* Facade
+* Flyweight
+* Proxy
+
+## Behavioral
+
+* [Chain of Responsibility](src/main/java/com/dominikcebula/edu/design/patterns/behavioral/chain/of/responsibility)
+* Command
+* Interpreter
+* Iterator
+* Mediator
+* Memento
+* Observer
+* State
+* Strategy
+* Template Method
+* visitor
+
+# Author
+
+Dominik Cebula
+
+* https://dominikcebula.com/
+
+* https://blog.dominikcebula.com/
+
+* https://www.udemy.com/user/dominik-cebula/
