@@ -1,4 +1,4 @@
-![CI Pipeline](https://github.com/dominikcebula/gof-design-patterns/actions/workflows/maven.yml/badge.svg)
+[![GoF Design Patterns Examples CI Pipeline](https://github.com/dominikcebula/gof-design-patterns/actions/workflows/maven.yml/badge.svg)](https://github.com/dominikcebula/gof-design-patterns/actions/workflows/maven.yml)
 
 # Introduction
 
