@@ -1,3 +1,5 @@
+![CI Pipeline](https://github.com/dominikcebula/gof-design-patterns/actions/workflows/maven.yml/badge.svg)
+
 # Introduction
 
 This repository contains GoF Design Patterns Examples used in my book "GoF Design Patterns Distilled".
